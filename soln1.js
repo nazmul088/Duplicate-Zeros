@@ -1,5 +1,5 @@
 function duplicateZeros(arr) {
-    for(let i=0;i < arr.length; i++) {
+    for(let i=0;i < arr.length -1; i++) {
         if(arr[i] === 0) {
             for(let j=arr.length -1; j >i ; j--) {
                 arr[j] = arr[j-1];
@@ -12,4 +12,4 @@ function duplicateZeros(arr) {
     return arr;
 }
 
-duplicateZeros([1,0,2,3,0,4,5,0]);
+console.log(duplicateZeros([0,0,0,0,0,0,0]));
